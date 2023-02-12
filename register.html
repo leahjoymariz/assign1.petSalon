@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/displaypet.css">
+    <link rel="stylesheet" href="styles/register.css">
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>The Fashion Pet</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+    <main>
+       <h2>Register a new Pet</h2>
+       <p>Pets in the Salon = <span id="numberOfPets"></span></p>
+
+       <div class="container">
+        <div class="mb-3">
+            <label class="form-label">Name:</label>
+            <input type="text" class="form-control" id="txtName">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Age:</label>
+            <input type="number" class="form-control" id="txtAge">
+       </div>
+       <div class="mb-3">
+            <label class="form-label">Gender:</label>
+            <select class="form-label" id="txtGender">
+                <option value="gender">Male</option>
+                <option value="gender">Female</option>
+            </select>
+            
+        </div>
+        <div class="mb-3">
+            <label>Breed:</label>
+            <input type="text" class="form-control" id="txtBreed">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Service:</label>
+            <select class="form-control" id="txtService">
+                <option value="" disabled>-- Select an Option--</option>
+                 <option value="grooming">Grooming</option>
+                <option value="nail trimming">Nail Trimming</option>
+                <option value="Bath">Bath</option>
+            </select>
+        </div>
+        <button class="btn btn-light" onclick="register();">Register</button>
+        </div>
+
+        <div id="pets">
+
+        </div>
+        </main>
+    <footer id="footer">
+
+    </footer>
+    <script src="scripts/displayFooter.js"></script>
+    <script src="scripts/displayPets1.js"></script>
+    <script src="scripts/register.js"></script>
+    
+        
+    
+</body>
+</html>
